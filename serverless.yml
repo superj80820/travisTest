@@ -1,7 +1,8 @@
-service: gitlab-example
+service: travisTest
 provider:
   name: aws
   runtime: nodejs10.x
+  region: ${opt:region, 'ap-southeast-1'}
   
 functions:
   hello:
