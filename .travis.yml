@@ -5,6 +5,5 @@ cache:
   directories:
     - node_modules
 script: 
-  - npm config set prefix /usr/local
   - npm install -g serverless
   - serverless deploy --stage production --verbose
